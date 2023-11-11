@@ -23,7 +23,6 @@ const NavBar = () => {
     { label: "Dashboard", href: "/" },
     { label: "Issues", href: "/issues/list" },
   ];
-  console.log(session);
 
   return (
     <nav className="border-b mb-5 px-5 py-3">
@@ -63,6 +62,7 @@ const NavBar = () => {
                     size="2"
                     radius="full"
                     className="cursor-pointer"
+                    referrerPolicy="no-referrer"
                   />
                 </DropdownMenu.Trigger>
                 <DropdownMenu.Content>
